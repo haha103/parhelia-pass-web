@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  key: MyString
+  owner: MyString
+  user: MyString
+  password: MyString
+  category: MyString
+  comments: MyString
+
+two:
+  key: MyString
+  owner: MyString
+  user: MyString
+  password: MyString
+  category: MyString
+  comments: MyString
