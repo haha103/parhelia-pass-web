@@ -1,5 +1,10 @@
 source 'http://ruby.taobao.org'
 
+gem 'jquery-ui-rails'
+#gem 'jeditable-rails'
+gem 'best_in_place', :git => 'https://github.com/aaronchi/best_in_place.git'
+gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
