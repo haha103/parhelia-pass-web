@@ -1,40 +1,42 @@
-<fieldset>
-  <legend>All Entries</legend>
+<div class='wrapper'>
   <div>
     <%= link_to "Add new entry", new_entry_path %> 
     <p><a id="new" href="">Add new row</a></p>
   </div>
-  <div>
-    <table class="display" id="example">
-      <thead>
-        <tr>
-          <th>Key</th>
-          <th>Owner</th>
-          <th>User</th>
-          <th>Password</th>
-          <th>Category</th>
-          <th>Comments</th>
-	  <th></th>
-	  <!--
-          <th>Edit</th>
-          <th>Delete</th>
-	  -->
-        </tr>
-      </thead>
+  <fieldset>
+    <legend>All Entries</legend>
+    <div>
+      <table class="display" id="example">
+	<thead>
+          <tr>
+            <th>Key</th>
+            <th>Owner</th>
+            <th>User</th>
+            <th>Password</th>
+            <th>Category</th>
+            <th>Comments</th>
+	    <th></th>
+	    <!--
+		<th>Edit</th>
+            <th>Delete</th>
+	    -->
+          </tr>
+	</thead>
 
-      <tbody>
-	<% @entries.each do |e| %>
-        <tr>
-          <td class='best_in_place'><%= best_in_place e, :key %></td>
-          <td class='best_in_place'><%= best_in_place e, :owner %></td>
-          <td class='best_in_place'><%= best_in_place e, :user %></td>
-          <td class='best_in_place'><%= best_in_place e, :password %></td>
-          <td class='best_in_place'><%= best_in_place e, :category %></td>
-          <td class='best_in_place'><%= best_in_place e, :comments, :nil => "-" %></td>
-	  <td></td>
-        </tr>
-	<% end %>
-      </tbody>
-    </table>
-  </div>
-</fieldset>
+	<tbody>
+	  <% @entries.each do |e| %>
+          <tr>
+            <td class='best_in_place'><%= best_in_place e, :key %></td>
+            <td class='best_in_place'><%= best_in_place e, :owner %></td>
+            <td class='best_in_place'><%= best_in_place e, :user %></td>
+            <td class='best_in_place'><%= best_in_place e, :password %></td>
+            <td class='best_in_place'><%= best_in_place e, :category %></td>
+            <td class='best_in_place'><%= best_in_place e, :comments, :nil => "-" %></td>
+	    <td></td>
+          </tr>
+	  <% end %>
+	</tbody>
+      </table>
+    </div>
+  </fieldset>
+</div>

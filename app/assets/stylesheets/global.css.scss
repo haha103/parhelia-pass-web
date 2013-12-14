@@ -1,6 +1,28 @@
+html { 
+  background: url(images/phuket_01_small.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div.top_banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 128px;
+  background-color: #DDEEEE; 
+  width: 100%;
+}
+
 fieldset {
   border: 1px solid green;
-  width:  1024px;
+  margin: auto;
+}
+
+div.wrapper {
+  background: white;
+  width: 1024px;
   margin: auto;
 }
 
