@@ -1,3 +1,4 @@
+/*
 html { 
   background: url(images/phuket_01_small.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -5,60 +6,58 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+*/
 
-div.top_banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 128px;
-  background-color: #DDEEEE; 
-  width: 100%;
-}
-
-fieldset {
-  border: 1px solid green;
-  margin: auto;
-}
-
-div.wrapper {
-  background: white;
+div.content {
   width: 1024px;
   margin: auto;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color:rgba(255,255,255,0.8);
 }
 
-legend {
-  padding: 2px 8px;
-  color:   green;
+div.header-wrapper {
+	width: 1024px;
+	margin: auto;
+	padding: 10px;
+	color: white;
 }
 
-table {
+a.header-links {
+	color: white;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+div.links-container {
+	margin: 0;
+	float: right;
+}
+
+div.logo-container {
+	margin: 0;
+	float: left;
+}
+
+img#header-logo {
+	height: 16px;
+}
+
+body {
+  margin: 0px;
+}
+
+header, footer {
+  background-color:rgba(0,0,0,0.6);
   width: 100%;
-  border: 1px solid #B0B0B0;
 }
 
-tr:nth-child(even) {
-  background: #F2F2F2;
+header {
+  height: 40px;
 }
 
-/*
-th {
-  background:  #3399FF;
-  color:       #FFFFFF;
-  font-family: serif;
-  font-size:   120%;
-  font-weight: normal;
-  font-style:  italic;
-  padding:     3px 10px;
-}
-*/
-th {
-  padding: 3px 10px;
-}
-
-td {
-  padding: 3px 10px;
-}
-
-div {
-  padding: 5px 8px;
+footer {
+  height: 35px;
 }
